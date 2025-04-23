@@ -2,91 +2,91 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Theming: memastikan layout konsisten di semua elemen */
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
-  padding: 20px;
+  font-family: 'Segoe UI', sans-serif; /* Typography: penggunaan font yang mudah dibaca */
+  background-color: #f0f0f0; /* Theming: pewarnaan latar untuk konsistensi visual */
+  color: #333; /* Theming: warna teks kontras */
+  padding: 20px; /* Micro-layout: memberi ruang agar konten tidak terlalu mepet */
 }
 
 header {
-  text-align: center;
-  margin-bottom: 40px;
+  text-align: center; /* Micro-layout: menengahkan header agar tampak rapi */
+  margin-bottom: 40px; /* Micro-layout: memberi jarak antar elemen */
 }
 
 footer p {
-  text-align: center;
+  text-align: center; /* Micro-layout: menengahkan teks di dalam footer */
 }
 
 /* BOOK LIST */
 .book-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grid Responsif */
-  gap: 20px;
+  display: grid; /* Media Query/Grid: menggunakan grid untuk layout fleksibel */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+  /* Responsive Grid Layout: jumlah kolom menyesuaikan ukuran layar */
+  gap: 20px; /* Micro-layout: memberikan jarak antar kartu buku */
 }
 
 /* KARTU BUKU */
 .book {
-  background-color: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s;
+  background-color: white; /* Theming: kontras dengan latar belakang */
+  border-radius: 10px; /* Theming: tampilan visual modern */
+  overflow: hidden; /* Micro-layout: mencegah konten keluar dari kartu */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Theming: efek kedalaman */
+  transition: transform 0.2s; /* Micro-interaction: respons visual saat hover */
 }
 
 .book:hover {
-  transform: translateY(-5px); /* Micro-interaction */
+  transform: translateY(-5px); /* Micro-interaction: efek interaktif saat kursor diarahkan */
 }
 
 .book img {
-  width: 100%; /* Responsive Image */
-  height: auto;
+  width: 100%; /* Responsive Image: gambar otomatis menyesuaikan lebar kartu */
+  height: auto; /* Responsive Image: menjaga proporsi gambar */
 }
 
 .info {
-  padding: 15px;
+  padding: 15px; /* Micro-layout: memberi ruang di dalam kartu untuk konten teks */
 }
 
 /* RESPONSIVE TEXT */
 h1 {
-  font-size: 2rem;
+  font-size: 2rem; /* Typography: ukuran teks besar untuk judul utama */
 }
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* Media Query: penyesuaian ukuran teks di layar kecil */
   }
 
   .info p {
-    font-size: 0.9rem;
+    font-size: 0.9rem; /* Media Query: penyesuaian konten teks agar tetap terbaca */
   }
 
   footer {
-    font-size: 0.85rem;
+    font-size: 0.85rem; /* Media Query: penyesuaian ukuran teks untuk aksesibilitas */
   }
 }
 
-
 footer {
-  background-color: #fff;
-  margin-top: 40px;
-  padding: 20px;
-  border-top: 2px solid #ddd;
-  text-align: center;
-  font-size: 0.95rem;
-  color: #666;
-  border-radius: 10px;
+  background-color: #fff; /* Theming: latar belakang yang bersih */
+  margin-top: 40px; /* Micro-layout: jarak dari konten utama */
+  padding: 20px; /* Micro-layout: ruang di dalam footer */
+  border-top: 2px solid #ddd; /* Theming: pemisah visual antar bagian */
+  text-align: center; /* Micro-layout: konten footer ditengahkan */
+  font-size: 0.95rem; /* Typography: ukuran teks sedang, mudah dibaca */
+  color: #666; /* Theming: warna teks sekunder */
+  border-radius: 10px; /* Theming: tampilan yang halus dan modern */
 }
 
 footer a {
-  color: #333;
-  text-decoration: none;
-  font-weight: bold;
+  color: #333; /* Theming: tautan tampak jelas */
+  text-decoration: none; /* Theming: tampilan bersih tanpa garis bawah */
+  font-weight: bold; /* Typography: tautan tampak menonjol */
 }
 
 footer a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* Micro-interaction: efek hover untuk umpan balik visual */
 }
