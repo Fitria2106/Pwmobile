@@ -42,10 +42,8 @@ footer p {
 }
 
 .book img {
-  width: 100%;
+  width: 100%; /* Responsive Image */
   height: auto;
-  max-height: 300px; /* Batasi tinggi gambar, sesuaikan angka sesuai kebutuhan */
-  object-fit: cover; /* Agar gambar tetap proporsional dan tidak terdistorsi */
 }
 
 .info {
