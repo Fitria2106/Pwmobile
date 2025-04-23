@@ -32,7 +32,7 @@ footer p {
 /* KARTU BUKU */
 .book {
   background-color: white; /* Theming: kontras dengan latar belakang */
-  border-radius: 10px; /* Theming: tampilan visual modern */
+  border-radius: 5px; /* Theming: tampilan visual modern */
   overflow: hidden; /* Micro-layout: mencegah konten keluar dari kartu */
   box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Theming: efek kedalaman */
   transition: transform 0.2s; /* Micro-interaction: respons visual saat hover */
